@@ -1,0 +1,27 @@
+﻿生成启动时间为 2014/09/25 18:56:19。
+     1>项目“G:\DXDevelop\DXHUILibCore\DXHUILibCore.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“G:\DXDevelop\TestProject\..\Temp\DXHUILibCoreRelease\DXHUILibCore.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+         所有输出均为最新。
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D DXHUILIBCORE_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"G:\DXDevelop\TestProject\..\Temp\DXHUILibCoreRelease\DXHUILibCore.pch" /Fo"G:\DXDevelop\TestProject\..\Temp\DXHUILibCoreRelease\\" /Fd"G:\DXDevelop\TestProject\..\Temp\DXHUILibCoreRelease\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt DXHUILibCore.cpp
+         DXHUILibCore.cpp
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\DXDevelop\TestProject\..\Bin\Release\DXHUILibCore.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"LibCore.def" /MANIFEST /ManifestFile:"G:\DXDevelop\TestProject\..\Temp\DXHUILibCoreRelease\DXHUILibCore.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"G:\DXDevelop\Bin\Release\DXHUILibCore.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\DXDevelop\TestProject\..\lib\DXHUILibCore.lib" /MACHINE:X86 /DLL G:\DXDevelop\TestProject\..\Temp\DXHUILibCoreRelease\dllmain.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUILibCoreRelease\DXHUILibCore.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUILibCoreRelease\stdafx.obj
+            正在创建库 G:\DXDevelop\TestProject\..\lib\DXHUILibCore.lib 和对象 G:\DXDevelop\TestProject\..\lib\DXHUILibCore.exp
+         正在生成代码
+         已完成代码的生成
+         DXHUILibCore.vcxproj -> G:\DXDevelop\TestProject\..\Bin\Release\DXHUILibCore.dll
+       Manifest:
+         D:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"G:\DXDevelop\TestProject\..\Bin\Release\DXHUILibCore.dll;#2" /manifest G:\DXDevelop\TestProject\..\Temp\DXHUILibCoreRelease\DXHUILibCore.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“G:\DXDevelop\TestProject\..\Temp\DXHUILibCoreRelease\DXHUILibCore.unsuccessfulbuild”。
+         正在对“G:\DXDevelop\TestProject\..\Temp\DXHUILibCoreRelease\DXHUILibCore.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“G:\DXDevelop\DXHUILibCore\DXHUILibCore.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:12.91

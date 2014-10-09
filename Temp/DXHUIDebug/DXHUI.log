@@ -1,0 +1,51 @@
+﻿生成启动时间为 2014/10/08 21:00:48。
+     1>项目“G:\DXDevelop\DXHUI\DXHUI.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\DXHUI.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+         所有输出均为最新。
+         所有输出均为最新。
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\DXSdk\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D DXHUI_EXPORTS /D DXUT_AUTOLIB /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\\" /Fd"G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt DXUT\DXUTgui.cpp
+         DXUTgui.cpp
+       ResourceCompile:
+         所有输出均为最新。
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\DXDevelop\TestProject\..\Bin\Debug\DXHUI.dll" /INCREMENTAL /NOLOGO /LIBPATH:..\DXSdk\lib\x86 comctl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"DefDXHui.def" /MANIFEST /ManifestFile:"G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\DXHUI.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"G:\DXDevelop\Bin\Debug\DXHUI.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\DXDevelop\TestProject\..\lib\DXHUId.lib" /MACHINE:X86 /DLL G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\DXHUI.res
+         G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\DXHUI.dll.embed.manifest.res
+         G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\BaseControl.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\Control.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\dllmain.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\DXHUI.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\DXHUIMainWnd.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\DXUT.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\DXUTcamera.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\DXUTenum.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\DXUTgui.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\DXUTguiIME.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\DXUTmisc.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\DXUTres.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\DXUTsettingsdlg.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\DXUTShapes.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\ImeUi.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\SDKmesh.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\SDKmisc.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\SDKsound.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\SDKwavefile.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\stdafx.obj
+       Manifest:
+         D:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\DXHUI.dll.embed.manifest" /manifest G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\DXHUI.dll.intermediate.manifest
+         所有输出均为最新。
+       LinkEmbedManifest:
+         所有输出均为最新。
+         DXHUI.vcxproj -> G:\DXDevelop\TestProject\..\Bin\Debug\DXHUI.dll
+       FinalizeBuildStatus:
+         正在删除文件“G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\DXHUI.unsuccessfulbuild”。
+         正在对“G:\DXDevelop\TestProject\..\Temp\DXHUIDebug\DXHUI.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“G:\DXDevelop\DXHUI\DXHUI.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:02.31

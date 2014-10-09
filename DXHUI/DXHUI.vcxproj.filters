@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="DXUT">
+      <UniqueIdentifier>{69ddb85c-c7ae-45d7-9102-9c52b3f3dbc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DXUT\inc">
+      <UniqueIdentifier>{8d52306b-d802-4978-87aa-13b91620bf1b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="DefDXHui.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="iconMain.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="icon1.ico">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="incDXHUI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DXHUILib.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseControl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Delegate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\DXUT.h">
+      <Filter>DXUT\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\DXUTcamera.h">
+      <Filter>DXUT\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\DXUTenum.h">
+      <Filter>DXUT\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\DXUTgui.h">
+      <Filter>DXUT\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\DXUTguiIME.h">
+      <Filter>DXUT\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\DXUTLockFreePipe.h">
+      <Filter>DXUT\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\DXUTmisc.h">
+      <Filter>DXUT\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\DXUTres.h">
+      <Filter>DXUT\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\DXUTsettingsdlg.h">
+      <Filter>DXUT\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\DXUTShapes.h">
+      <Filter>DXUT\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\ImeUi.h">
+      <Filter>DXUT\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\SDKmesh.h">
+      <Filter>DXUT\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\SDKmisc.h">
+      <Filter>DXUT\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\SDKsound.h">
+      <Filter>DXUT\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\SDKwavefile.h">
+      <Filter>DXUT\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Control.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainWndRes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DXHUI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseControl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DXHUIMainWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\DXUT.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\DXUTcamera.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\DXUTenum.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\DXUTgui.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\DXUTguiIME.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\DXUTmisc.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\DXUTres.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\DXUTsettingsdlg.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\DXUTShapes.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\ImeUi.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\SDKmesh.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\SDKmisc.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\SDKsound.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\SDKwavefile.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="Control.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DXHUI.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,65 @@
+﻿生成启动时间为 2014/09/25 18:56:20。
+     1>项目“G:\DXDevelop\DXHUI\DXHUI.vcxproj”在节点 3 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\DXHUI.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\DXSdk\include /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D DXHUI_EXPORTS /D DXUT_AUTOLIB /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\DXHUI.pch" /Fo"G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\\" /Fd"G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\DXSdk\include /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D DXHUI_EXPORTS /D DXUT_AUTOLIB /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\DXHUI.pch" /Fo"G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\\" /Fd"G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt BaseControl.cpp DXHUI.cpp DXHUIMainWnd.cpp
+         BaseControl.cpp
+         DXHUI.cpp
+         DXHUIMainWnd.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\DXSdk\include /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D DXHUI_EXPORTS /D DXUT_AUTOLIB /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\\" /Fd"G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
+         dllmain.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\DXSdk\include /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D DXHUI_EXPORTS /D DXUT_AUTOLIB /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\\" /Fd"G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt DXUT\DXUT.cpp DXUT\DXUTcamera.cpp DXUT\DXUTenum.cpp DXUT\DXUTgui.cpp DXUT\DXUTguiIME.cpp DXUT\DXUTmisc.cpp DXUT\DXUTres.cpp DXUT\DXUTsettingsdlg.cpp DXUT\DXUTShapes.cpp DXUT\ImeUi.cpp DXUT\SDKmesh.cpp DXUT\SDKmisc.cpp DXUT\SDKsound.cpp DXUT\SDKwavefile.cpp
+         DXUT.cpp
+         DXUTcamera.cpp
+         DXUTenum.cpp
+         DXUTgui.cpp
+         DXUTguiIME.cpp
+         DXUTmisc.cpp
+         DXUTres.cpp
+         DXUTsettingsdlg.cpp
+         DXUTShapes.cpp
+         ImeUi.cpp
+         SDKmesh.cpp
+         SDKmisc.cpp
+         SDKsound.cpp
+         SDKwavefile.cpp
+       ResourceCompile:
+         D:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\DXHUI.res" DXHUI.rc 
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\DXDevelop\TestProject\..\Bin\Release\DXHUI.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\DXSdk\lib\x86 comctl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"DefDXHui.def" /MANIFEST /ManifestFile:"G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\DXHUI.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"G:\DXDevelop\Bin\Release\DXHUI.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\DXDevelop\TestProject\..\lib\DXHUI.lib" /MACHINE:X86 /DLL G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\DXHUI.res
+         G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\BaseControl.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\dllmain.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\DXHUI.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\DXHUIMainWnd.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\DXUT.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\DXUTcamera.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\DXUTenum.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\DXUTgui.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\DXUTguiIME.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\DXUTmisc.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\DXUTres.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\DXUTsettingsdlg.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\DXUTShapes.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\ImeUi.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\SDKmesh.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\SDKmisc.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\SDKsound.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\SDKwavefile.obj
+         G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\stdafx.obj
+            正在创建库 G:\DXDevelop\TestProject\..\lib\DXHUI.lib 和对象 G:\DXDevelop\TestProject\..\lib\DXHUI.exp
+         正在生成代码
+         已完成代码的生成
+         DXHUI.vcxproj -> G:\DXDevelop\TestProject\..\Bin\Release\DXHUI.dll
+       Manifest:
+         D:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"G:\DXDevelop\TestProject\..\Bin\Release\DXHUI.dll;#2" /manifest G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\DXHUI.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\DXHUI.unsuccessfulbuild”。
+         正在对“G:\DXDevelop\TestProject\..\Temp\DXHUIRelease\DXHUI.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“G:\DXDevelop\DXHUI\DXHUI.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:25.09

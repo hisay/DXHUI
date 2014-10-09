@@ -1,0 +1,31 @@
+﻿生成启动时间为 2014/10/08 20:55:39。
+     1>项目“G:\DXDevelop\TestProject\TestProject\TestProject.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“G:\DXDevelop\TestProject\..\Temp\TestProjectDebug\TestProject.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IG:\DXDevelop\TestProject\..\DXSdk\include /IG:\DXDevelop\TestProject\..\inc /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"G:\DXDevelop\TestProject\..\Temp\TestProjectDebug\TestProject.pch" /Fo"G:\DXDevelop\TestProject\..\Temp\TestProjectDebug\\" /Fd"G:\DXDevelop\TestProject\..\Temp\TestProjectDebug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt TestProject.cpp
+         TestProject.cpp
+       ResourceCompile:
+         所有输出均为最新。
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\DXDevelop\TestProject\..\bin\Debug\TestProject.exe" /INCREMENTAL /NOLOGO /LIBPATH:G:\DXDevelop\TestProject\..\DXSdk\Lib\x86 /LIBPATH:G:\DXDevelop\TestProject\..\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"G:\DXDevelop\TestProject\..\Temp\TestProjectDebug\TestProject.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"G:\DXDevelop\bin\Debug\TestProject.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\DXDevelop\TestProject\..\bin\Debug\TestProject.lib" /MACHINE:X86 G:\DXDevelop\TestProject\..\Temp\TestProjectDebug\TestProject.res
+         G:\DXDevelop\TestProject\..\Temp\TestProjectDebug\TestProject.exe.embed.manifest.res
+         G:\DXDevelop\TestProject\..\Temp\TestProjectDebug\stdafx.obj
+         G:\DXDevelop\TestProject\..\Temp\TestProjectDebug\TestProject.obj
+       Manifest:
+         D:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"G:\DXDevelop\TestProject\..\Temp\TestProjectDebug\TestProject.exe.embed.manifest" /manifest G:\DXDevelop\TestProject\..\Temp\TestProjectDebug\TestProject.exe.intermediate.manifest
+         所有输出均为最新。
+       LinkEmbedManifest:
+         所有输出均为最新。
+         TestProject.vcxproj -> G:\DXDevelop\TestProject\..\bin\Debug\TestProject.exe
+       FinalizeBuildStatus:
+         正在删除文件“G:\DXDevelop\TestProject\..\Temp\TestProjectDebug\TestProject.unsuccessfulbuild”。
+         正在对“G:\DXDevelop\TestProject\..\Temp\TestProjectDebug\TestProject.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“G:\DXDevelop\TestProject\TestProject\TestProject.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.26
