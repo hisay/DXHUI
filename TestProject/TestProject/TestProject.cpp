@@ -41,18 +41,24 @@ public:
 		{
 			m_pMainDlg = pDlg;
 			pDlg->InitDialog( pMain,  this, pDlg );
-			pDlg->SetFont( 0, TEXT("微软雅黑"), 44, FW_BOLD   );
+			pDlg->SetFont( 0, TEXT("微软雅黑"), 13, FW_EXTRABOLD   );
 			pDlg->SetSize(500,400);
 			pDlg->SetLocation(0,0);
-			pDlg->SetBkGround( 0x22000000 );
-			int	y = 0;int nH = 40;
+			pDlg->SetBkGround( 0x00000000 );
+			int	y = 0;int nH = 30;
 			pDlg->AddStatic( 100, TEXT("ADDSTATIC"), 0, 0, 80, nH);y += nH;
 			pDlg->AddButton( 101, TEXT("BUTTON"), 0, y, 80, nH);y += nH;
 			pDlg->AddCheckBox( 102, TEXT("CHECKBOX"), 0, y, 80,nH);y += nH;
 			IDXHUIListBox* plbox =	pDlg->AddListBox( 103, TEXT("LISTBOX"), 0, y, 120,nH*4);y += nH*4;
 			plbox->AddItem( TEXT("one"), 0);
-			plbox->AddItem( TEXT("twe"), 0);
-			plbox->AddItem( TEXT("tweq"), 0);
+			plbox->AddItem( TEXT("测试数据"), 0);
+			plbox->AddItem( TEXT("大起大落"), 0);plbox->AddItem( TEXT("one"), 0);
+			plbox->AddItem( TEXT("测试数据"), 0);
+			plbox->AddItem( TEXT("大起大落"), 0);plbox->AddItem( TEXT("one"), 0);
+			plbox->AddItem( TEXT("测试数据"), 0);
+			plbox->AddItem( TEXT("大起大落"), 0);plbox->AddItem( TEXT("one"), 0);
+			plbox->AddItem( TEXT("测试数据"), 0);
+			plbox->AddItem( TEXT("大起大落"), 0);
 			plbox->GetBaseControl()->SetText( TEXT("twe") );
 
 			pDlg->AddRadioButton( 104, 1, TEXT("RADIO1"), 0, y, 100,nH);y += nH;
@@ -137,7 +143,7 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 		CMainWndEvt evt(pMainWnd);
 		pMainWnd->SetEvtInterface(&evt);
 		pMainWnd->CreateWnd( _T("TestProject"), 800, 600);
-		pMainWnd->SetParameter( IDXHUIMainWnd::MWP_BACKGROUND, 0xff333399 );
+		pMainWnd->SetParameter( IDXHUIMainWnd::MWP_BACKGROUND, 0xffAA3333 );
 		pMainWnd->DoMainLoop();
 		delete pMainWnd;
 	}
