@@ -54,30 +54,12 @@ bool CDialog::InitDialog( IDXHUIMainWnd* pMainWnd, IGUIEvent* cb, void* pUD)
 	if ( pMain )
 	{
 		this->m_pGUIEvt	=	cb;
-		this->m_pGUIEvtD		=	pUD;
+		this->m_pGUIEvtD=	pUD;
 
-		m_dlg.Init( pMain->GetDialogRM()  );//, true, TEXT("e:/video/ListTitle.bmp"));// TEXT("G:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Samples/Media/Textures/four_NM_height.DDS"));
-		//m_dlg.AddButton( 11, TEXT("BUTTON"), 10,10, 100,30);
-		//m_dlg.AddCheckBox( 12, TEXT("CHECKBOX"), 10, 40, 100,30);
-		//CDXUTComboBox*	pCombo = NULL;
-		//m_dlg.AddComboBox( 13, 10, 70, 100,30 , 0,false, &pCombo);
-		//pCombo->AddItem(TEXT("one"),0);
-		//pCombo->AddItem(TEXT("one"),0);
-		//pCombo->AddItem(TEXT("one"),0);
-		//pCombo->AddItem(TEXT("one"),0);
-		//pCombo->AddItem(TEXT("one"),0);
-		//m_dlg.AddEditBox( 14, TEXT("EDITBOX"), 10, 110, 100,30);
-		//CDXUTListBox*	pListBox = 0;
-		//m_dlg.AddListBox( 15, 10,150,100,130, 0, &pListBox );
-		//m_dlg.AddRadioButton( 16,1, TEXT("HEHE"), 10,290,100,30);
-		//m_dlg.AddRadioButton( 17,1, TEXT("xx"), 10,320,100,30);
-		//pListBox->AddItem( TEXT("one"), 0 );
-		//pListBox->AddItem( TEXT("two"), 0 );
-		//pListBox->AddItem( TEXT("tree"), 0 );
-		//m_dlg.AddSlider( 18, 10, 360, 100, 30, 0, 1000, 20);
-		//m_dlg.AddStatic( 19, TEXT("STATIC"), 10, 390, 100,30 );
+		
+		m_dlg.Init( pMain->GetDialogRM()  );
 		m_dlg.SetCallback( fnCALLBACKDXUTGUIEVENT, this );
-	}
+}
 	return true;
 }
 void	CDialog::SetSize( int w,int h )
@@ -161,7 +143,7 @@ IDXHUIControl* CDialog::GetControlByPos(int x, int y )
 			return (*i);
 		}
 	}
-	return false;
+	return NULL;
 }
 IDXHUIStaticText*	CDialog::AddStatic(UINT nID, LPCTSTR szText, int x, int y ,int w, int h)
 {

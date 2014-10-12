@@ -40,6 +40,8 @@ struct	ILibCore
 {
 	virtual void	RegisterDXHUIClass(IDXHUI_CLASSDef* ptr) = 0;
 	virtual		IDXHUIBase*	CreateClassObject( LPCTSTR)		 = 0;
+	//must call this by exe application once.
+	virtual	bool	InitLibrary()							 = 0;
 };
 struct	IDXHUILib
 {

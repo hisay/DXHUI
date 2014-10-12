@@ -114,7 +114,10 @@ public:
 	virtual void OnLost(IDXHUIDev* p)
 	{
 	}
-	//virtual void On
+	virtual void DeleteMe()
+	{
+		this->Release();
+	}
 protected:
 	LPD3DXFONT	m_pFont;
 	int			m_w,m_h;
@@ -510,10 +513,11 @@ bool CMainWnd::CreateD3DDev()
 		return true;
 	}else{
 		pDev = new CDXDev();
+		m_pDev = pDev;
 		if( pDev->Create()){
-			m_pDev = pDev;
 			return true;
 		}else{
+			m_pDev = NULL;
 			pDev->Release();
 			pDev = NULL;
 		}
@@ -608,7 +612,7 @@ bool CMainWnd::SetParameter( UINT v, DWORD dwV )
 	}
 	return true;
 }
-IDXHUIFont*	CMainWnd::GetNewFont( LPCTSTR szName, int w, int h, INT bBold)
+IDXHUIFont*	CMainWnd::GetNewFont(  LPCTSTR szName, int w, int h, INT bBold)
 {
 	CDXFont	* pFont = new CDXFont();
 	if (!pFont)

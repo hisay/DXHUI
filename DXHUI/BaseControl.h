@@ -54,10 +54,10 @@ public:
 	virtual void OnRender(double fT, float fE)							= 0;
 	virtual bool	SetParameter( UINT	,	DWORD dwValue )				= 0;
 	virtual bool	ToggleFullScreen()									= 0;
-	virtual IDXHUIFont*	GetNewFont( LPCTSTR szName, int w, int h, INT bBold) = 0;
+	virtual IDXHUIFont*	GetNewFont(	LPCTSTR szName, int w, int h, INT bBold) = 0;
 };
 
-class	IDXHUIFont
+DXHUI_INTERFACE	IDXHUIFont
 {
 public:
 	virtual	~IDXHUIFont(){}
@@ -69,7 +69,7 @@ public:
 	virtual	bool	Create( IDXHUIDev*	)								= 0;
 	virtual	void	OnReset( IDXHUIDev* )								= 0;
 	virtual void	OnLost( IDXHUIDev* )								= 0;
-
+	virtual	void	DeleteMe()											= 0;
 };
 DXHUI_INTERFACE	IDXHUIControl
 {
@@ -91,70 +91,7 @@ public:
 	virtual	void*	GetDXControl()										= 0;
 	
 };
-//class 	CDXHUIControl : public IDXHUIControl
-//{
-//public:
-//	CDXHUIControl()
-//	{
-//		m_nWidth 	= 0;
-//		m_nHeight 	= 0;
-//		m_dwForeClr	= 0xffffffff;
-//		m_dwBackClr	= 0;
-//	}
-//	virtual ~CDXHUIControl(){}
-//	virtual void SetSize(int w, int h){ m_nWidth = w;m_nHeight = h;}
-//	virtual void SetText(LPCTSTR szText){m_strText = szText;}
-//	virtual LPCTSTR GetText()
-//	{
-//		return m_strText.c_str();
-//	}
-//	virtual	DWORD GetBackground()
-//	{
-//		return m_dwBackClr;
-//	}
-//	virtual	DWORD GetForeGround()
-//	{
-//		return m_dwForeClr;
-//	}
-//	virtual void SetBackGround(DWORD dw)
-//	{
-//		m_dwBackClr = dw;
-//	}
-//	virtual void SetForeGround(DWORD dw)
-//	{
-//		m_dwForeClr = dw;
-//	}
-//	virtual void GetSize(int& w,int& h)
-//	{
-//		w = m_nWidth;
-//		h = m_nHeight;
-//	}
-//	virtual	void Enable(bool b)
-//	{
-//		m_bEnable = b;
-//	}
-//	virtual bool IsEnable()
-//	{
-//		return m_bEnable;
-//	}
-//	virtual IDXHUIFont* GetFont()		
-//	{
-//		return m_pFont;
-//	}
-//	virtual void 	SetFont(IDXHUIFont * pFont){ m_pFont = pFont;	}
-//	virtual	void*	GetDXControl()										
-//	{
-//		return NULL;
-//	}
-//protected:
-//	int 	m_nHeight;
-//	int 	m_nWidth;
-//	int 	m_dwBackClr;
-//	int 	m_dwForeClr;
-//	bool	m_bEnable;
-//	tstring m_strText;
-//	IDXHUIFont* m_pFont;
-//};
+
 DXHUI_INTERFACE	IDXHUIControlBase
 {
 public:

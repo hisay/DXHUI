@@ -9,9 +9,14 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DXHUI", "..\DXHUI\DXHUI.vcxproj", "{080AE6A9-9D7F-42E2-AA93-DDAFB3185437}"
 	ProjectSection(ProjectDependencies) = postProject
 		{F2B73B96-6A13-4254-9A70-CAFD54C89119} = {F2B73B96-6A13-4254-9A70-CAFD54C89119}
+		{37C5FCB8-20A4-4F1F-9D20-FF88C97D4C06} = {37C5FCB8-20A4-4F1F-9D20-FF88C97D4C06}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DXHUILibCore", "..\DXHUILibCore\DXHUILibCore.vcxproj", "{F2B73B96-6A13-4254-9A70-CAFD54C89119}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DXHUILanguage", "..\DXHUILanguage\DXHUILanguage.vcxproj", "{37C5FCB8-20A4-4F1F-9D20-FF88C97D4C06}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DXHUIVideo", "..\DXHUIVideo\DXHUIVideo.vcxproj", "{90AEA72C-F459-4553-B8EE-B6F49B9BD1D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +36,14 @@ Global
 		{F2B73B96-6A13-4254-9A70-CAFD54C89119}.Debug|Win32.Build.0 = Debug|Win32
 		{F2B73B96-6A13-4254-9A70-CAFD54C89119}.Release|Win32.ActiveCfg = Release|Win32
 		{F2B73B96-6A13-4254-9A70-CAFD54C89119}.Release|Win32.Build.0 = Release|Win32
+		{37C5FCB8-20A4-4F1F-9D20-FF88C97D4C06}.Debug|Win32.ActiveCfg = Debug|Win32
+		{37C5FCB8-20A4-4F1F-9D20-FF88C97D4C06}.Debug|Win32.Build.0 = Debug|Win32
+		{37C5FCB8-20A4-4F1F-9D20-FF88C97D4C06}.Release|Win32.ActiveCfg = Release|Win32
+		{37C5FCB8-20A4-4F1F-9D20-FF88C97D4C06}.Release|Win32.Build.0 = Release|Win32
+		{90AEA72C-F459-4553-B8EE-B6F49B9BD1D9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{90AEA72C-F459-4553-B8EE-B6F49B9BD1D9}.Debug|Win32.Build.0 = Debug|Win32
+		{90AEA72C-F459-4553-B8EE-B6F49B9BD1D9}.Release|Win32.ActiveCfg = Release|Win32
+		{90AEA72C-F459-4553-B8EE-B6F49B9BD1D9}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

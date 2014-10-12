@@ -52,6 +52,7 @@ public:
 		}
 		return NULL;
 	}
+	virtual	bool	InitLibrary();
 protected:
 	vector<IDXHUI_CLASSDef*>	m_vDef;
 	CRITICAL_SECTION	s_libCS;
@@ -61,4 +62,33 @@ CLibCore	s_LibCore;
 ILibCore*	WINAPI	GetDXHUILibCore()
 {
 	return &s_LibCore;
+}
+
+bool	CLibCore::InitLibrary()
+{
+	TCHAR	szPath[MAX_PATH];
+	memset(szPath, 0, sizeof(szPath));
+	::GetModuleFileName( NULL, szPath, MAX_PATH);
+	*(_tcsrchr( szPath, TEXT('\\')) + 1) = TEXT('\0');
+	tstring	strPath(szPath);
+	tstring sstrPath(strPath);
+	sstrPath.append( TEXT("*.huilib"));
+
+	WIN32_FIND_DATA	findData;
+	HANDLE	hFind = ::FindFirstFile( sstrPath.c_str(), &findData); 
+	if ( hFind == INVALID_HANDLE_VALUE || 0 == hFind ) return false;
+
+	BOOL	bFind = TRUE;
+	do
+	{
+		if ( !(findData.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY ))
+		{
+			tstring libname(strPath + findData.cFileName);
+			if (! LoadLibrary( (libname).c_str() ))
+			{
+				DXHUI_LogInfo(  TEXT("Load lib failed ")<< libname.c_str()<< TEXT("ERR = ")<<GetLastError() );//<<(findData.cFileName));
+			}
+		}
+	}while((bFind  = FindNextFile( hFind, &findData )));
+	return true;
 }

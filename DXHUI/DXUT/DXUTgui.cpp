@@ -4722,6 +4722,10 @@ void CDXUTScrollBar::UpdateThumbRect()
         m_rcThumb.top = m_rcTrack.top + ( m_nPosition - m_nStart ) * ( RectHeight( m_rcTrack ) - nThumbHeight )
             / nMaxPosition;
         m_rcThumb.bottom = m_rcThumb.top + nThumbHeight;
+		if ( m_rcThumb.bottom   > this->m_rcDownButton.top )
+		{
+			m_rcThumb.bottom -= (m_rcThumb.bottom  ) - this->m_rcDownButton.top;
+		}
         m_bShowThumb = true;
 
     }
@@ -5614,8 +5618,8 @@ void CDXUTListBox::Render( float fElapsedTime )
         // Find out the height of a single line of text
         RECT rc = m_rcText;
         RECT rcSel = m_rcSelection;
-        //rc.bottom = rc.top + m_pDialog->GetManager()->GetFontNode( pElement->iFont )->nHeight;
-		rc.bottom	= rc.top + m_pDialog->GetFont( 0 ) ->nHeight;
+        rc.bottom = rc.top + m_pDialog->GetManager()->GetFontNode( pElement->iFont )->nHeight;
+		//rc.bottom	= rc.top + m_pDialog->GetFont( 0 ) ->nHeight;
         // Update the line height formation
         m_nTextHeight = rc.bottom - rc.top;
 
