@@ -3,6 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestProject", "TestProject\TestProject.vcxproj", "{DE5C8554-D851-4BD5-AA3E-227294F6A32B}"
 	ProjectSection(ProjectDependencies) = postProject
+		{90AEA72C-F459-4553-B8EE-B6F49B9BD1D9} = {90AEA72C-F459-4553-B8EE-B6F49B9BD1D9}
 		{080AE6A9-9D7F-42E2-AA93-DDAFB3185437} = {080AE6A9-9D7F-42E2-AA93-DDAFB3185437}
 	EndProjectSection
 EndProject

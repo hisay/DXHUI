@@ -1,7 +1,7 @@
-﻿生成启动时间为 2014/10/11 16:21:18。
+﻿生成启动时间为 2014/10/15 09:34:58。
      1>项目“G:\DXDevelop\TestProject\TestProject\TestProject.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
-         正在对“G:\DXDevelop\TestProject\..\Temp\TestProjectDebug\TestProject.unsuccessfulbuild”执行 Touch 任务。
+         正在创建“G:\DXDevelop\TestProject\..\Temp\TestProjectDebug\TestProject.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
          所有输出均为最新。
          D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IG:\DXDevelop\TestProject\..\DXSdk\include /IG:\DXDevelop\TestProject\..\inc /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"G:\DXDevelop\TestProject\..\Temp\TestProjectDebug\TestProject.pch" /Fo"G:\DXDevelop\TestProject\..\Temp\TestProjectDebug\\" /Fd"G:\DXDevelop\TestProject\..\Temp\TestProjectDebug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt TestProject.cpp
@@ -28,4 +28,4 @@
 
 生成成功。
 
-已用时间 00:00:01.23
+已用时间 00:00:01.76

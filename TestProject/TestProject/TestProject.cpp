@@ -6,6 +6,7 @@
 #include "../DXHUI/BaseControl.h"
 #include "../DXHUI/DXHUILib.h"
 #include "../DXHUILanguage/incLanguage.h"
+#include "../DXHUIVideo/incDXHUIVideo.h"
 
 #include <g_dxHUIInc.h>
 #ifdef _DEBUG
@@ -33,11 +34,11 @@ public:
 		{
 			m_pMainDlg->OnRender(pDev, fEl );
 		}
+		if ( m_pVideo )
+			m_pVideo->Reader(fEl);
 	}
 	virtual	void	OnDeviceCreate(IDXHUIMainWnd* pMain,IDXHUIDev*	pDev) 
 	{
-		IDXHUIFont*	pFont = pMain->GetNewFont( _T("»ªÎÄÐÐ¿¬"), 40,120, FW_BOLD);
-		//pFont->DeleteMe();
 		IDXHUIDialog* pDlg = dynamic_cast<IDXHUIDialog*> ( CreateHUI(TEXT("DXHUIDialog")) );
 		if ( pDlg )
 		{
@@ -47,7 +48,7 @@ public:
 			pDlg->SetFont( 1, TEXT("Î¢ÈíÑÅºÚ"), 14, FW_BOLD   );
 			pDlg->SetSize(500,400);
 			pDlg->SetLocation(0,0);
-			pDlg->SetBkGround( 0xff00BB00 );
+			pDlg->SetBkGround( 0xff336699 );
 			int	y = 0;int nH = 30;
 			pDlg->AddStatic( 100, TEXT("ADDSTATIC"), 0, 0, 80, nH);y += nH;
 			pDlg->AddButton( 101, TEXT("BUTTON"), 0, y, 80, nH);y += nH;
@@ -76,9 +77,25 @@ public:
 
 			
 		}
+		//
+		IDXHUIVideo* pVideo = dynamic_cast<IDXHUIVideo*>( CreateHUI(TEXT("DXHUIVideo")));
+		if ( pVideo )
+		{
+			this->m_pVideo = pVideo;
+			if (!pVideo->Create(pDev))
+			{
+				DXHUI_LogErr( TEXT("Can't create video!") );
+			}
+		}
 	}
 	virtual	void	OnDeviceDestroy(IDXHUIMainWnd* )
 	{
+		if ( m_pVideo )
+		{
+			m_pVideo->CloseVideo();
+			m_pVideo->Free();
+			m_pVideo = NULL;
+		}
 	}
 	virtual	void	OnDeviceChange(IDXHUIMainWnd*,IDXHUIDev*	pDev)
 	{
@@ -88,6 +105,16 @@ public:
 	}
 	virtual	void	OnFrameMove(IDXHUIMainWnd *,IDXHUIDev *)
 	{
+		if ( m_pVideo )
+		{
+			static bool bFirst = false;
+			static BYTE* pYUV  = new BYTE[100*100 + 50];
+			if (!bFirst)
+			{
+				m_pVideo->OpenVideo( 100, 100, IDXHUIVideo::CS_I420 );
+				bFirst = true;
+			}
+		}
 	}
 	virtual	bool	OnWndProc( HWND hHwnd, UINT nMsg, WPARAM w, LPARAM l) 
 	{
@@ -101,12 +128,17 @@ public:
 				m_pMainWnd->ToggleFullScreen();
 				return false;
 			}
+			
 			break;
 		}
 		return false;
 	}
 	virtual bool	OnKeyProc(UINT nChar, bool bKeyDown, bool bAltDown )
 	{
+		if ( nChar == 'A' )
+		{
+				m_pMainDlg->SetVisible( !m_pMainDlg->IsVisible() );
+		}
 		return false;
 	}
 	virtual bool	OnMouseProc(bool bLeftButtonDown, bool bRightButtonDown, bool bMiddleButtonDown, bool bSideButton1Down, 
@@ -118,10 +150,15 @@ public:
 	{
 	}
 	virtual void	OnDeviceLost(IDXHUIMainWnd* )	{
+		if ( m_pVideo )
+			m_pVideo->OnLost();
 	}
 	virtual void	OnDeviceReset(IDXHUIMainWnd* ,IDXHUIDev*	)		    	{
 		if ( m_pMainDlg )
 			m_pMainDlg->SetLocation( 10,10);
+
+		if ( m_pVideo )
+			m_pVideo->OnReset();
 	}
  
 	virtual bool	OnBeforRender(IDXHUIMainWnd* , IDXHUIDev*,double fTime, float)
@@ -136,6 +173,7 @@ public:
 protected:
 	IDXHUIMainWnd*	m_pMainWnd;
 	IDXHUIDialog*	m_pMainDlg;
+	IDXHUIVideo*	m_pVideo;
 };
  
 int APIENTRY _tWinMain(HINSTANCE hInstance,
@@ -162,7 +200,7 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 		CMainWndEvt evt(pMainWnd);
 		pMainWnd->SetEvtInterface(&evt);
 		pMainWnd->CreateWnd( _T("TestProject"), 800, 600);
-		pMainWnd->SetParameter( IDXHUIMainWnd::MWP_BACKGROUND, 0xffAA3333 );
+		pMainWnd->SetParameter( IDXHUIMainWnd::MWP_BACKGROUND, 0xff447788 );
 		pMainWnd->DoMainLoop();
 		delete pMainWnd;
 	}

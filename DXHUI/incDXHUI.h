@@ -46,6 +46,7 @@ public:
 	virtual ~IDXHUIDev(){}
 	virtual	UINT	GetSDKVer ()	=	0;
 	virtual	void*	GetDXDevice()	=	0;
+	virtual	bool FindResourcePath( LPCTSTR szSubPath, tstring* ) = 0;
 };
 
 IDXHUIBase* CreateHUI(LPCTSTR interfaceName);

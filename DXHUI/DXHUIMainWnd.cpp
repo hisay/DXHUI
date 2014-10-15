@@ -43,9 +43,11 @@ public:
 	{
 		m_pDev9 = pd3dDevice;
 	}
+
+	virtual	bool FindResourcePath(LPCTSTR szPath, tstring* pstr);
 protected:
 	UINT	m_nRefCount;
-	IDirect3D9 * m_pD39 ;
+	//IDirect3D9 * m_pD39 ;
 	int		m_nWidth;
 	int		m_nHeight;
 	HWND	m_hWnd;
@@ -129,7 +131,7 @@ protected:
 CDXDev::CDXDev()
 {
 	m_nRefCount = 0;
-	m_pD39 	= NULL;
+	//m_pD39 	= NULL;
 	m_nWidth	= 800;
 	m_nHeight	= 600;
 	m_hWnd		= NULL;
@@ -144,6 +146,34 @@ CDXDev::~CDXDev()
 	}
 	this->Destroy();
 }
+
+bool CDXDev::FindResourcePath(LPCTSTR szPath, tstring* pstr)
+{
+	// Get the exe name, and exe path
+    WCHAR strExePath[MAX_PATH] = {0};
+	WCHAR strDesPath[MAX_PATH] = {0};
+	WCHAR* strLastSlash = NULL;
+    GetModuleFileName( NULL, strExePath, MAX_PATH );
+    strExePath[MAX_PATH - 1] = 0;
+    strLastSlash = wcsrchr( strExePath, TEXT( '\\' ) );
+    if( strLastSlash )
+    {
+		strLastSlash++;
+        *strLastSlash = TEXT('\0');
+	}
+
+	wcscpy_s( strDesPath, MAX_PATH,  strExePath );
+	wcscat_s( strDesPath, MAX_PATH,	 TEXT("Resource\\"));
+	wcscat_s( strDesPath, MAX_PATH,	 szPath);
+
+	if ( GetFileAttributes( strDesPath ) != 0xFFFFFFFF )
+	{
+		if ( pstr ) *pstr = strDesPath;
+		return true;
+	}
+	return false;
+}
+
 
 IDirect3DDevice9 * CDXDev::GetDXDev()
 {
@@ -160,7 +190,7 @@ bool CDXDev::Create()
 	static	bool	sBCreate = false;
 	if (sBCreate)	return false;
 
-	if (m_pD39  && m_pDev9) return true;
+	if ( m_pDev9) return true;
 
 	HRESULT	hr;
 	hr =	DXUTCreateDevice();
@@ -563,6 +593,10 @@ void CMainWnd::OnRender(double fTime, float fEl)
 
 void CMainWnd::OnCreateDevice9(IDirect3DDevice9* pd3dDevice,const D3DSURFACE_DESC* pDesc)
 {
+	if ( m_pDev )// !dynamic_cast<CDXDev*>(m_pDev)->GetDXDevice() )
+	{
+		dynamic_cast<CDXDev*>(m_pDev)->ResetDevice(pd3dDevice);
+	}
 	HRESULT	hr	= NULL;
 	this->m_dlgRM.OnD3D9CreateDevice( pd3dDevice );
 	MAINEVTCALL( OnDeviceCreate, this, m_pDev );
@@ -574,8 +608,6 @@ void CMainWnd::OnLostDevice9()
 	//if ( m_pWndEvt ) m_pWndEvt->OnDeviceLost( this  );
 	MAINEVTCALL( OnDeviceLost, this );
 	this->m_dlgRM.OnD3D9LostDevice();
-
-
 }
 
 void CMainWnd::OnResetDevice9(IDirect3DDevice9* pd3dDevice,const D3DSURFACE_DESC* pDesc)

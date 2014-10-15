@@ -8,6 +8,7 @@ author: you not't need know!
 #include "Display.h"
 #include <map>
 
+class CDisplay;
 class CRenderFactory
 {
 public:

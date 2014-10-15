@@ -95,7 +95,9 @@
     <ClInclude Include="Display_RGB32.h" />
     <ClInclude Include="Display_YUV420.h" />
     <ClInclude Include="display_yuv422.h" />
+    <ClInclude Include="DXHUIVideo.h" />
     <ClInclude Include="dxutil.h" />
+    <ClInclude Include="incDXHUIVideo.h" />
     <ClInclude Include="Picture.h" />
     <ClInclude Include="ps_RGB24.h" />
     <ClInclude Include="ps_YUV420.h" />
